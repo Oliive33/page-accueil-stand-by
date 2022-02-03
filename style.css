@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Caslon540";
+  src: url("../ressources/fonts/Caslon540/Caslon540-BT-Roman.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "GrouchBT";
+  src: url("../ressources/fonts/GrouchBT/Grouch-BT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../ressources/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
+:root {
+  --font-primary: "GrouchBT", "sans serif";
+  --font-secondary: "Caslon540", "sans serif";
+  --font-tertiary: "Poppins", "sans-serif";
+
+  --color-primary: #90111c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  padding: 0 0.1rem 0 0.1rem;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+/* Page container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.photo-accueil {
+  background-image: url(./ressources/images/photo-mazaryne.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+.photo-accueil .txt-photo-accueil {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  font-family: var(--font-primary);
+  line-height: 1.5;
+}
+.photo-accueil .txt-photo-accueil h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.photo-accueil .txt-photo-accueil span {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.txt-accueil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.txt-accueil .titre-secondaire {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: var(--font-primary);
+  /* letter-spacing: 1px; */
+  margin-bottom: 20px;
+}
+.txt-accueil .titre-secondaire h2 {
+  font-weight: 400;
+}
+.txt-accueil .titre-secondaire img {
+  margin-top: 9px;
+  width: 30px;
+  height: 30px;
+}
+
+.txt-accueil p {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+}
+.mail {
+  margin-top: 50px;
+}
+.mail input {
+  padding: 17px 50px 17px 10px;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 17px;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 4px 0px rgba(181, 181, 181, 0.75);
+  transition: all 0.2s ease-in-out;
+}
+.mail input:hover {
+  border: 1px solid --color-primary;
+  outline: #90111c;
+}
+.social-network {
+  display: flex;
+  justify-content: center;
+  margin: -80px 40px 0 240px;
+}
+.social-network a {
+  margin: 10px;
+  transition: all 0.2 ease-in-out;
+}
+.social-network a:hover {
+  transform: scale(1.02);
+}
+
+.social-network a img {
+  width: 30px;
+  height: 30px;
+}
+/* Responsive style */
+@media screen and (max-width: 1110px) {
+  .container {
+    gap: 2rem;
+  }
+}
