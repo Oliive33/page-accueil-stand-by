@@ -158,8 +158,19 @@ a {
     height: 50vh;
   }
   .photo-accueil .txt-photo-accueil {
+    line-height: 1.4;
+  }
+  .photo-accueil .txt-photo-accueil h1 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .photo-accueil .txt-photo-accueil span {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .photo-accueil .txt-photo-accueil {
     position: absolute;
-    top: 485px;
+    top: 175px;
     bottom: 0;
   }
   .txt-accueil {
