@@ -177,7 +177,7 @@ a {
   }
   .photo-accueil .txt-photo-accueil {
     position: absolute;
-    top: 175px;
+    top: 160px;
     bottom: 0;
     line-height: 1.4;
   }
@@ -215,7 +215,13 @@ a {
     width: 85%;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 415px) {
+  .photo-accueil .txt-photo-accueil {
+    position: absolute;
+    top: 145px;
+    bottom: 0;
+    line-height: 1.3;
+  }
   .photo-accueil .txt-photo-accueil h1 {
     font-size: 32px;
     font-weight: 500;
@@ -224,15 +230,9 @@ a {
     font-size: 20px;
     letter-spacing: 3px;
   }
-  .photo-accueil .txt-photo-accueil {
-    position: absolute;
-    top: 145px;
-    bottom: 0;
-    line-height: 1.3;
-  }
 
   .txt-accueil .titre-secondaire {
-    font-size: 22px;
+    font-size: 21px;
   }
   .txt-accueil p {
     width: 95%;
