@@ -141,6 +141,11 @@ a {
     gap: 2rem;
   }
 }
+@media screen and (max-width: 991px) {
+  .txt-accueil p br {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) {
   .txt-accueil .titre-secondaire {
     font-size: 28px;
@@ -153,7 +158,7 @@ a {
   .photo-accueil {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 78% 30%;
+    background-position: 49% 58%;
     width: 100%;
     height: 50vh;
   }
@@ -177,11 +182,13 @@ a {
     align-items: center;
     padding: 0.5rem;
   }
+
   .txt-accueil .titre-secondaire {
     font-size: 25px;
   }
   .txt-accueil p {
-    font-size: 14px;
+    font-size: 15px;
+    width: 83%;
   }
   .mail {
     display: flex;
@@ -192,5 +199,18 @@ a {
     display: flex;
     justify-content: center;
     margin: 50px 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .txt-accueil p {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .txt-accueil .titre-secondaire {
+    font-size: 22px;
+  }
+  .txt-accueil p {
+    width: 95%;
   }
 }
