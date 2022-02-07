@@ -117,10 +117,19 @@ a {
   color: #000;
   font-family: var(--font-secondary);
 }
-.mail input:hover {
-  border: 1px solid --color-primary;
-  outline: #90111c;
+.mail button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  top: 6px;
+  right: 18px;
 }
+.mail button img {
+  width: 10px;
+}
+
 .social-network {
   display: flex;
   justify-content: center;
@@ -205,6 +214,9 @@ a {
     display: flex;
     margin-top: 40px;
     justify-content: center;
+  }
+  .mail button {
+    top: 0px;
   }
   .social-network {
     display: flex;
