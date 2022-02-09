@@ -35,6 +35,28 @@ body {
 a {
   text-decoration: none;
 }
+/* msg alert */
+.msg-alert {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background: rgba(216, 250, 216, 0.884);
+  height: 55px;
+  line-height: 55px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: bold;
+}
+.msg-alert button {
+  position: relative;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 /* Page container */
 .container {
   display: grid;
@@ -88,7 +110,7 @@ a {
   font-weight: 400;
 }
 .txt-accueil .titre-secondaire img {
-  margin-top: 9px;
+  margin-top: 0px;
   width: 30px;
   height: 30px;
 }
